@@ -1,0 +1,622 @@
+{
+	"info": {
+		"_postman_id": "b423c554-f5a5-49e9-bd3d-6a594bb67465",
+		"name": "Reign Backend Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All News (Paginated)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/{{version}}/news?page=1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"{{version}}",
+						"news"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All News (Paginated)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/{{version}}/news?page=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"news"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "13097"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3329-h+eHqxmqR28JMYVTWcnUQZW1TJ0\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 15 Jul 2022 20:39:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"objectID\": \"32108964\",\n        \"created_at\": \"2022-07-15T15:11:09.000Z\",\n        \"deleted_at\": null,\n        \"title\": null,\n        \"url\": null,\n        \"author\": \"nisa\",\n        \"points\": null,\n        \"story_text\": null,\n        \"comment_text\": \"Not OP but but I try to explain it from my subjective perspective: It&#x27;s good because that&#x27;s not your small nodejs startup but rather Municipalities. They process sensitive data about their citizens and I&#x27;m sure Denmark has strict privacy laws for that. Giving that data to Google means it&#x27;s now in the US and can be used by NSA or other organisations for spying. Does that happen? I don&#x27;t know. But why take the risk. Secret court orders for national security are a thing. So it&#x27;s a danger to the independence of the Danish state. Might all sound a little hyperbolic and theoretic but it can&#x27;t be excluded. Furthermore it&#x27;s illegal under current EU law ontop of that. See the other links to Max Schremps works here. Of course due to the sad state of public it infrastructure in Europe the risk for loosing the data is probably much higher than storing it at Google. I&#x27;m not optimistic that this will change. Too much lousy small firms and borderline corruption and too much tax money to earn.\",\n        \"num_comments\": null,\n        \"story_id\": 32108164,\n        \"story_title\": \"Danish Data Protection Agency bans Google Workspace for Municipalities\",\n        \"story_url\": \"https://blog.simpleanalytics.com/denmark-bans-google-workspace-for-municipalities\",\n        \"parent_id\": 32108648,\n        \"created_at_i\": 1657897869,\n        \"tags\": [\n            \"comment\",\n            \"author_nisa\",\n            \"story_32108164\"\n        ],\n        \"highlightResult\": {\n            \"author\": {\n                \"value\": \"nisa\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"comment_text\": {\n                \"value\": \"Not OP but but I try to explain it from my subjective perspective: It's good because that's not your small <em>nodejs</em> startup but rather Municipalities. They process sensitive data about their citizens and I'm sure Denmark has strict privacy laws for that. Giving that data to Google means it's now in the US and can be used by NSA or other organisations for spying. Does that happen? I don't know. But why take the risk. Secret court orders for national security are a thing. So it's a danger to the independence of the Danish state. Might all sound a little hyperbolic and theoretic but it can't be excluded. Furthermore it's illegal under current EU law ontop of that. See the other links to Max Schremps works here. Of course due to the sad state of public it infrastructure in Europe the risk for loosing the data is probably much higher than storing it at Google. I'm not optimistic that this will change. Too much lousy small firms and borderline corruption and too much tax money to earn.\",\n                \"matchLevel\": \"full\",\n                \"fullyHighlighted\": false,\n                \"matchedWords\": [\n                    \"nodejs\"\n                ]\n            },\n            \"story_title\": {\n                \"value\": \"Danish Data Protection Agency bans Google Workspace for Municipalities\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"story_url\": {\n                \"value\": \"https://blog.simpleanalytics.com/denmark-bans-google-workspace-for-municipalities\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            }\n        }\n    },\n    {\n        \"objectID\": \"32108741\",\n        \"created_at\": \"2022-07-15T14:48:35.000Z\",\n        \"deleted_at\": null,\n        \"title\": null,\n        \"url\": null,\n        \"author\": \"headbee\",\n        \"points\": null,\n        \"story_text\": null,\n        \"comment_text\": \"It&#x27;s good for IoT and automation because it&#x27;s fundamentally a framework for discrete functional reactive programming. It could be good for any context where you need to tie together a bunch of events from different contexts that all depend on each other to drive some other behavior. You can design design nodes and flows that minimize state and keep it local.\",\n        \"num_comments\": null,\n        \"story_id\": 32093929,\n        \"story_title\": \"Node-Red 3.0 Released\",\n        \"story_url\": \"https://nodered.org/blog/2022/07/14/version-3-0-released\",\n        \"parent_id\": 32094388,\n        \"created_at_i\": 1657896515,\n        \"tags\": [\n            \"comment\",\n            \"author_headbee\",\n            \"story_32093929\"\n        ],\n        \"highlightResult\": {\n            \"author\": {\n                \"value\": \"headbee\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"comment_text\": {\n                \"value\": \"It's good for IoT and automation because it's fundamentally a framework for discrete functional reactive programming. It could be good for any context where you need to tie together a bunch of events from different contexts that all depend on each other to drive some other behavior. You can design design <em>nodes</em> and flows that minimize state and keep it local.\",\n                \"matchLevel\": \"full\",\n                \"fullyHighlighted\": false,\n                \"matchedWords\": [\n                    \"nodejs\"\n                ]\n            },\n            \"story_title\": {\n                \"value\": \"Node-Red 3.0 Released\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"story_url\": {\n                \"value\": \"https://nodered.org/blog/2022/07/14/version-3-0-released\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            }\n        }\n    },\n    {\n        \"objectID\": \"32108380\",\n        \"created_at\": \"2022-07-15T14:08:29.000Z\",\n        \"deleted_at\": null,\n        \"title\": \"Optimizing Node.js Dependencies in AWS Lambda\",\n        \"url\": \"https://aws.amazon.com/blogs/compute/optimizing-node-js-dependencies-in-aws-lambda/\",\n        \"author\": \"kiyanwang\",\n        \"points\": 1,\n        \"story_text\": null,\n        \"comment_text\": null,\n        \"num_comments\": 0,\n        \"story_id\": null,\n        \"story_title\": null,\n        \"story_url\": null,\n        \"parent_id\": null,\n        \"created_at_i\": 1657894109,\n        \"tags\": [\n            \"story\",\n            \"author_kiyanwang\",\n            \"story_32108380\"\n        ],\n        \"highlightResult\": {\n            \"title\": {\n                \"value\": \"Optimizing Node.js Dependencies in AWS Lambda\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"url\": {\n                \"value\": \"https://aws.amazon.com/blogs/compute/optimizing-<em>node-js</em>-dependencies-in-aws-lambda/\",\n                \"matchLevel\": \"full\",\n                \"fullyHighlighted\": false,\n                \"matchedWords\": [\n                    \"nodejs\"\n                ]\n            },\n            \"author\": {\n                \"value\": \"kiyanwang\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            }\n        }\n    },\n    {\n        \"objectID\": \"32108009\",\n        \"created_at\": \"2022-07-15T13:33:38.000Z\",\n        \"deleted_at\": null,\n        \"title\": null,\n        \"url\": null,\n        \"author\": \"gwbas1c\",\n        \"points\": null,\n        \"story_text\": null,\n        \"comment_text\": \"It&#x27;s critical that; what ever you&#x27;re trying to accomplish in a low-code environment; can be accomplished with minimal abstraction-based concepts, like variables and methods. You environment should be as easy &#x2F; hard as Excel programming.<p>In the 1980s there was a major effort to make programming intuitive through visual-based programming tools. There was even a journal dedicated to visual programming. I happened to read through some of these articles in 2002-03 for a college project.<p>The conclusion in the last journal was that programming requires concepts that can only be expressed in words. Visual (intuitive) programming eventually failed because it wasn&#x27;t expressive enough.<p>At the same time, Excel took off. Although it doesn&#x27;t have &quot;variables,&quot; it does allow for expression of abstract concepts.<p>&gt; I&#x27;d expect the software engineering team to manage these apps, so the benefit I can see is the quick turnaround on the UI, rather than handing over to non-engineering users for development.<p>IMO, make sure the team that&#x27;s going to manage these apps is involved in choosing the toolchain and has complete buy-in. (Or at least has a healthy skepticism.) There&#x27;s nothing worse than an edict coming from down on high to use a bad tool.<p>Also, keep in mind that, if you&#x27;re using well-educated software engineers; lightweight scripts in languages like Python, Javascript (via NodeJS), LINQPad (lightweight C#), ect can go very far. Because you&#x27;re working with mature languages, you can minimize your technology risk. When I was at Intel, we had a rather robust batching system for VBScript. It could call into custom COM objects, usually written in C++ or C#, when needed.\",\n        \"num_comments\": null,\n        \"story_id\": 32106380,\n        \"story_title\": \"Ask HN: Experiences with low-code systems (Budibase,Appsmith etc.)?\",\n        \"story_url\": null,\n        \"parent_id\": 32106380,\n        \"created_at_i\": 1657892018,\n        \"tags\": [\n            \"comment\",\n            \"author_gwbas1c\",\n            \"story_32106380\"\n        ],\n        \"highlightResult\": {\n            \"author\": {\n                \"value\": \"gwbas1c\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"comment_text\": {\n                \"value\": \"It's critical that; what ever you're trying to accomplish in a low-code environment; can be accomplished with minimal abstraction-based concepts, like variables and methods. You environment should be as easy / hard as Excel programming.<p>In the 1980s there was a major effort to make programming intuitive through visual-based programming tools. There was even a journal dedicated to visual programming. I happened to read through some of these articles in 2002-03 for a college project.<p>The conclusion in the last journal was that programming requires concepts that can only be expressed in words. Visual (intuitive) programming eventually failed because it wasn't expressive enough.<p>At the same time, Excel took off. Although it doesn't have &quot;variables,&quot; it does allow for expression of abstract concepts.<p>&gt; I'd expect the software engineering team to manage these apps, so the benefit I can see is the quick turnaround on the UI, rather than handing over to non-engineering users for development.<p>IMO, make sure the team that's going to manage these apps is involved in choosing the toolchain and has complete buy-in. (Or at least has a healthy skepticism.) There's nothing worse than an edict coming from down on high to use a bad tool.<p>Also, keep in mind that, if you're using well-educated software engineers; lightweight scripts in languages like Python, Javascript (via <em>NodeJS</em>), LINQPad (lightweight C#), ect can go very far. Because you're working with mature languages, you can minimize your technology risk. When I was at Intel, we had a rather robust batching system for VBScript. It could call into custom COM objects, usually written in C++ or C#, when needed.\",\n                \"matchLevel\": \"full\",\n                \"fullyHighlighted\": false,\n                \"matchedWords\": [\n                    \"nodejs\"\n                ]\n            },\n            \"story_title\": {\n                \"value\": \"Ask HN: Experiences with low-code systems (Budibase,Appsmith etc.)?\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            }\n        }\n    },\n    {\n        \"objectID\": \"32107666\",\n        \"created_at\": \"2022-07-15T12:59:57.000Z\",\n        \"deleted_at\": null,\n        \"title\": \"Ask HN: How to improve daily crypto investment game?\",\n        \"url\": null,\n        \"author\": \"nerfed\",\n        \"points\": 2,\n        \"story_text\": \"As a fun side project I built a daily crypto investment game. It randomly selects five of the top 200 cryptos each day and users can compete by investing 100k (fake money) into the tokens of their choosing. The following day users can see if they made the leaderboard for both biggest gains and biggest losses.<p>Site: https:&#x2F;&#x2F;cryptable.club<p>The site does not require email or registration to play.<p>I&#x27;m running out of new feature ideas but I&#x27;m not ready to let this one go. If anyone has any ideas, please let me know.<p>So you don&#x27;t have to visit the site, right now it has the following features:<p>- Dark&#x2F;Light Mode<p>- Past 7-day Spark graph of each currency<p>- Summary section showing how much you made&#x2F;lost on each coin the previous day<p>- Leaderboard showing biggest gainers&#x2F;losers<p>- Share to social<p>Possible features I&#x27;ve considered:<p>- 1v1 Challenge - Allow players to challenge friends for the day. Show the results in a separate 1v1 widget showing who won and how much profit&#x2F;loss they both made.<p>- Email daily recap. If the user chooses to register, we could email them their daily recap which would show how much they made&#x2F;lost on each of the five coins.<p>Tech stack:<p>- DynamoDB<p>- Lambdas running NodeJS to get price updates from the CoinGecko API every ~3 minutes, also for generating the leaderboard after the cutoff time<p>- Vue&#x2F;Vuetify for frontend\",\n        \"comment_text\": null,\n        \"num_comments\": 0,\n        \"story_id\": null,\n        \"story_title\": null,\n        \"story_url\": null,\n        \"parent_id\": null,\n        \"created_at_i\": 1657889997,\n        \"tags\": [\n            \"story\",\n            \"author_nerfed\",\n            \"story_32107666\",\n            \"ask_hn\"\n        ],\n        \"highlightResult\": {\n            \"title\": {\n                \"value\": \"Ask HN: How to improve daily crypto investment game?\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"author\": {\n                \"value\": \"nerfed\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"story_text\": {\n                \"value\": \"As a fun side project I built a daily crypto investment game. It randomly selects five of the top 200 cryptos each day and users can compete by investing 100k (fake money) into the tokens of their choosing. The following day users can see if they made the leaderboard for both biggest gains and biggest losses.<p>Site: https://cryptable.club<p>The site does not require email or registration to play.<p>I'm running out of new feature ideas but I'm not ready to let this one go. If anyone has any ideas, please let me know.<p>So you don't have to visit the site, right now it has the following features:<p>- Dark/Light Mode<p>- Past 7-day Spark graph of each currency<p>- Summary section showing how much you made/lost on each coin the previous day<p>- Leaderboard showing biggest gainers/losers<p>- Share to social<p>Possible features I've considered:<p>- 1v1 Challenge - Allow players to challenge friends for the day. Show the results in a separate 1v1 widget showing who won and how much profit/loss they both made.<p>- Email daily recap. If the user chooses to register, we could email them their daily recap which would show how much they made/lost on each of the five coins.<p>Tech stack:<p>- DynamoDB<p>- Lambdas running <em>NodeJS</em> to get price updates from the CoinGecko API every ~3 minutes, also for generating the leaderboard after the cutoff time<p>- Vue/Vuetify for frontend\",\n                \"matchLevel\": \"full\",\n                \"fullyHighlighted\": false,\n                \"matchedWords\": [\n                    \"nodejs\"\n                ]\n            }\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Soft Delete New",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/{{version}}/news/32101926",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"{{version}}",
+						"news",
+						"32101926"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Soft Delete New - OK",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/{{version}}/news/32101926",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"news",
+								"32101926"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "56"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"38-tsG7Bx/FciIvNMm5P6unPr8W7mM\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 15 Jul 2022 20:41:39 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Deleted new with id: 32101926\"\n}"
+				},
+				{
+					"name": "Soft Delete New - Not Found in DB",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/{{version}}/news/32101926",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"news",
+								"32101926"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "41"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"29-Sm7Y8pu/QsaglvqvRyVl1FtYQ3c\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 15 Jul 2022 20:41:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 404,\n    \"message\": \"News not found\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Search News By Filters",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/{{version}}/news/filter?title=Google Kubernetes Engine adds support for Arm nodes&author=crb&tags[]=story&tags[]=author_crb&tags[]=story_32085453",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"{{version}}",
+						"news",
+						"filter"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "Google Kubernetes Engine adds support for Arm nodes"
+						},
+						{
+							"key": "author",
+							"value": "crb"
+						},
+						{
+							"key": "tags[]",
+							"value": "story"
+						},
+						{
+							"key": "tags[]",
+							"value": "author_crb"
+						},
+						{
+							"key": "tags[]",
+							"value": "story_32085453"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Search News By Filters - Complete",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/{{version}}/news/filter?title=Google Kubernetes Engine adds support for Arm nodes&author=crb&tags[]=story&tags[]=author_crb&tags[]=story_32085453",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"news",
+								"filter"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "Google Kubernetes Engine adds support for Arm nodes"
+								},
+								{
+									"key": "author",
+									"value": "crb"
+								},
+								{
+									"key": "tags[]",
+									"value": "story"
+								},
+								{
+									"key": "tags[]",
+									"value": "author_crb"
+								},
+								{
+									"key": "tags[]",
+									"value": "story_32085453"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "870"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"366-xJY8f83//spobf9cGt4y7ohSVuw\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 15 Jul 2022 20:39:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"objectID\": \"32085453\",\n        \"created_at\": \"2022-07-13T16:59:04.000Z\",\n        \"deleted_at\": null,\n        \"title\": \"Google Kubernetes Engine adds support for Arm nodes\",\n        \"url\": \"https://cloud.google.com/blog/products/containers-kubernetes/gke-supports-new-arm-based-tau-t2a-vms\",\n        \"author\": \"crb\",\n        \"points\": 118,\n        \"story_text\": null,\n        \"comment_text\": null,\n        \"num_comments\": 48,\n        \"story_id\": null,\n        \"story_title\": null,\n        \"story_url\": null,\n        \"parent_id\": null,\n        \"created_at_i\": 1657731544,\n        \"tags\": [\n            \"story\",\n            \"author_crb\",\n            \"story_32085453\"\n        ],\n        \"highlightResult\": {\n            \"title\": {\n                \"value\": \"Google Kubernetes Engine adds support for Arm <em>nodes</em>\",\n                \"matchLevel\": \"full\",\n                \"fullyHighlighted\": false,\n                \"matchedWords\": [\n                    \"nodejs\"\n                ]\n            },\n            \"url\": {\n                \"value\": \"https://cloud.google.com/blog/products/containers-kubernetes/gke-supports-new-arm-based-tau-t2a-vms\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"author\": {\n                \"value\": \"crb\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            }\n        }\n    }\n]"
+				},
+				{
+					"name": "Search News By Filters - Incomplete",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/{{version}}/news/filter?title=Google Kubernetes Engine adds support for Arm nodes&tags[]=story",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"news",
+								"filter"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "Google Kubernetes Engine adds support for Arm nodes"
+								},
+								{
+									"key": "author",
+									"value": "crb",
+									"disabled": true
+								},
+								{
+									"key": "tags[]",
+									"value": "story"
+								},
+								{
+									"key": "tags[]",
+									"value": "author_crb",
+									"disabled": true
+								},
+								{
+									"key": "tags[]",
+									"value": "story_32085453",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "870"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"366-xJY8f83//spobf9cGt4y7ohSVuw\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 15 Jul 2022 20:40:20 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"objectID\": \"32085453\",\n        \"created_at\": \"2022-07-13T16:59:04.000Z\",\n        \"deleted_at\": null,\n        \"title\": \"Google Kubernetes Engine adds support for Arm nodes\",\n        \"url\": \"https://cloud.google.com/blog/products/containers-kubernetes/gke-supports-new-arm-based-tau-t2a-vms\",\n        \"author\": \"crb\",\n        \"points\": 118,\n        \"story_text\": null,\n        \"comment_text\": null,\n        \"num_comments\": 48,\n        \"story_id\": null,\n        \"story_title\": null,\n        \"story_url\": null,\n        \"parent_id\": null,\n        \"created_at_i\": 1657731544,\n        \"tags\": [\n            \"story\",\n            \"author_crb\",\n            \"story_32085453\"\n        ],\n        \"highlightResult\": {\n            \"title\": {\n                \"value\": \"Google Kubernetes Engine adds support for Arm <em>nodes</em>\",\n                \"matchLevel\": \"full\",\n                \"fullyHighlighted\": false,\n                \"matchedWords\": [\n                    \"nodejs\"\n                ]\n            },\n            \"url\": {\n                \"value\": \"https://cloud.google.com/blog/products/containers-kubernetes/gke-supports-new-arm-based-tau-t2a-vms\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"author\": {\n                \"value\": \"crb\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            }\n        }\n    }\n]"
+				},
+				{
+					"name": "Search News By Filters - No Filter (Return 20 Recents News)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/{{version}}/news/filter",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"news",
+								"filter"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "Google Kubernetes Engine adds support for Arm nodes",
+									"disabled": true
+								},
+								{
+									"key": "author",
+									"value": "crb",
+									"disabled": true
+								},
+								{
+									"key": "tags[]",
+									"value": "story",
+									"disabled": true
+								},
+								{
+									"key": "tags[]",
+									"value": "author_crb",
+									"disabled": true
+								},
+								{
+									"key": "tags[]",
+									"value": "story_32085453",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "30953"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"78e9-H2mDt2wikiaakmTQ+324pQshhfM\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 15 Jul 2022 20:40:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"objectID\": \"30344744\",\n        \"created_at\": \"2022-02-15T10:20:34.000Z\",\n        \"deleted_at\": null,\n        \"title\": \"Deep introduction to class decorators in TypeScript\",\n        \"url\": \"https://techsparx.com/nodejs/typescript/decorators/classes.html\",\n        \"author\": \"kiyanwang\",\n        \"points\": 28,\n        \"story_text\": null,\n        \"comment_text\": null,\n        \"num_comments\": 20,\n        \"story_id\": null,\n        \"story_title\": null,\n        \"story_url\": null,\n        \"parent_id\": null,\n        \"created_at_i\": 1644920434,\n        \"tags\": [\n            \"story\",\n            \"author_kiyanwang\",\n            \"story_30344744\"\n        ],\n        \"highlightResult\": {\n            \"title\": {\n                \"value\": \"Deep introduction to class decorators in TypeScript\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"url\": {\n                \"value\": \"https://techsparx.com/<em>nodejs</em>/typescript/decorators/classes.html\",\n                \"matchLevel\": \"full\",\n                \"fullyHighlighted\": false,\n                \"matchedWords\": [\n                    \"nodejs\"\n                ]\n            },\n            \"author\": {\n                \"value\": \"kiyanwang\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            }\n        }\n    },\n    {\n        \"objectID\": \"30345821\",\n        \"created_at\": \"2022-02-15T12:57:05.000Z\",\n        \"deleted_at\": null,\n        \"title\": \"Show HN: Frenemy.live, Matching People for Voice Calls\",\n        \"url\": \"https://www.frenemy.live\",\n        \"author\": \"BKirkpatrick\",\n        \"points\": 1,\n        \"story_text\": \"Hi HN, long time reader but first time poster.<p>I&#x27;ve been working on frenemy.live since I first started wfh some time back and realized how isolating it could be. With some inspiration from podcasts, Discord, Omegle and a reality tv show I came up with the idea of matching people for voice calls based on their opinions. These opinions are based on custom statements that I have thought of but are definitely not set in stone and I am open to suggestions. My hope is that frenemy.live facilitates respectful conversation and maybe leads to lasting relationships.<p>So about the technical stuff, the app is written with Elixir and Phoenix with a little NodeJS. I chose this stack after looking into Elixir&#x27;s fault tolerance and capacity for concurrency, its pub-sub features (which really came in handy) and Phoenix LiveView.<p>Constructive feedback is more than welcome and I hope you like the app. (Please don&#x27;t give it the kiss of death)<p>Oh I have also created this discord in case any hiccups happen and people need to find each other. Or you want to report any bugs.\\n<a href=\\\"https:&#x2F;&#x2F;discord.gg&#x2F;f3FJUv2J\\\" rel=\\\"nofollow\\\">https:&#x2F;&#x2F;discord.gg&#x2F;f3FJUv2J</a>\",\n        \"comment_text\": null,\n        \"num_comments\": 0,\n        \"story_id\": null,\n        \"story_title\": null,\n        \"story_url\": null,\n        \"parent_id\": null,\n        \"created_at_i\": 1644929825,\n        \"tags\": [\n            \"story\",\n            \"author_BKirkpatrick\",\n            \"story_30345821\",\n            \"show_hn\"\n        ],\n        \"highlightResult\": {\n            \"title\": {\n                \"value\": \"Show HN: Frenemy.live, Matching People for Voice Calls\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"url\": {\n                \"value\": \"https://www.frenemy.live\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"author\": {\n                \"value\": \"BKirkpatrick\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"story_text\": {\n                \"value\": \"Hi HN, long time reader but first time poster.<p>I've been working on frenemy.live since I first started wfh some time back and realized how isolating it could be. With some inspiration from podcasts, Discord, Omegle and a reality tv show I came up with the idea of matching people for voice calls based on their opinions. These opinions are based on custom statements that I have thought of but are definitely not set in stone and I am open to suggestions. My hope is that frenemy.live facilitates respectful conversation and maybe leads to lasting relationships.<p>So about the technical stuff, the app is written with Elixir and Phoenix with a little <em>NodeJS</em>. I chose this stack after looking into Elixir's fault tolerance and capacity for concurrency, its pub-sub features (which really came in handy) and Phoenix LiveView.<p>Constructive feedback is more than welcome and I hope you like the app. (Please don't give it the kiss of death)<p>Oh I have also created this discord in case any hiccups happen and people need to find each other. Or you want to report any bugs.\\n<a href=\\\"https://discord.gg/f3FJUv2J\\\" rel=\\\"nofollow\\\">https://discord.gg/f3FJUv2J</a>\",\n                \"matchLevel\": \"full\",\n                \"fullyHighlighted\": false,\n                \"matchedWords\": [\n                    \"nodejs\"\n                ]\n            }\n        }\n    },\n    {\n        \"objectID\": \"30349166\",\n        \"created_at\": \"2022-02-15T17:01:10.000Z\",\n        \"deleted_at\": null,\n        \"title\": \"Gigwell (YC W16) Is Hiring a Full-Stack Software Engineer (Kotlin, NodeJS)\",\n        \"url\": \"https://www.ycombinator.com/companies/gigwell/jobs/74jfcrGzu-full-stack-software-engineer\",\n        \"author\": \"jeremieh\",\n        \"points\": 1,\n        \"story_text\": null,\n        \"comment_text\": null,\n        \"num_comments\": null,\n        \"story_id\": null,\n        \"story_title\": null,\n        \"story_url\": null,\n        \"parent_id\": null,\n        \"created_at_i\": 1644944470,\n        \"tags\": [\n            \"job\",\n            \"author_jeremieh\",\n            \"story_30349166\"\n        ],\n        \"highlightResult\": {\n            \"title\": {\n                \"value\": \"Gigwell (YC W16) Is Hiring a Full-Stack Software Engineer (Kotlin, <em>NodeJS</em>)\",\n                \"matchLevel\": \"full\",\n                \"fullyHighlighted\": false,\n                \"matchedWords\": [\n                    \"nodejs\"\n                ]\n            },\n            \"url\": {\n                \"value\": \"https://www.ycombinator.com/companies/gigwell/jobs/74jfcrGzu-full-stack-software-engineer\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"author\": {\n                \"value\": \"jeremieh\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            }\n        }\n    },\n    {\n        \"objectID\": \"30356615\",\n        \"created_at\": \"2022-02-16T05:19:21.000Z\",\n        \"deleted_at\": null,\n        \"title\": null,\n        \"url\": null,\n        \"author\": \"JoeOfTexas\",\n        \"points\": null,\n        \"story_text\": null,\n        \"comment_text\": \"Not sure how far along you are, but I could help you build the game if you are willing to try making it for acos.games.  I built a simulator that can help speed up development which is done in React and NodeJS.\",\n        \"num_comments\": null,\n        \"story_id\": 30352710,\n        \"story_title\": \"Networking of a turn-based game\",\n        \"story_url\": \"https://longwelwind.net/blog/networking-turn-based-game/\",\n        \"parent_id\": 30354479,\n        \"created_at_i\": 1644988761,\n        \"tags\": [\n            \"comment\",\n            \"author_JoeOfTexas\",\n            \"story_30352710\"\n        ],\n        \"highlightResult\": {\n            \"author\": {\n                \"value\": \"JoeOfTexas\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"comment_text\": {\n                \"value\": \"Not sure how far along you are, but I could help you build the game if you are willing to try making it for acos.games.  I built a simulator that can help speed up development which is done in React and <em>NodeJS</em>.\",\n                \"matchLevel\": \"full\",\n                \"fullyHighlighted\": false,\n                \"matchedWords\": [\n                    \"nodejs\"\n                ]\n            },\n            \"story_title\": {\n                \"value\": \"Networking of a turn-based game\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"story_url\": {\n                \"value\": \"https://longwelwind.net/blog/networking-turn-based-game/\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            }\n        }\n    },\n    {\n        \"objectID\": \"30361236\",\n        \"created_at\": \"2022-02-16T15:32:03.000Z\",\n        \"deleted_at\": null,\n        \"title\": null,\n        \"url\": null,\n        \"author\": \"sylware\",\n        \"points\": null,\n        \"story_text\": null,\n        \"comment_text\": \"The problem with javascript is not javascript, it is the system interface of the software where the javacript engine is: massive and beyond sanity heavy web renderers (blink|webkit&#x2F;geeko) or very custom stuff like node-js.<p>I wonder if there is a &quot;standard&quot;, simple enough (reasonable implementation cost for very few devs) and stable in time way to call C functions of a shared library (aka &quot;libdl-ing&quot; from javascript), and use their memory objects and primitive types.\\nWe can even think of extensions for direct syscalls of various kernels.<p>How to make this &quot;generic&quot; enough? If I recall properly, python has &quot;ctype&quot;.\",\n        \"num_comments\": null,\n        \"story_id\": 30357788,\n        \"story_title\": \"State of JavaScript 2021\",\n        \"story_url\": \"https://2021.stateofjs.com/\",\n        \"parent_id\": 30357788,\n        \"created_at_i\": 1645025523,\n        \"tags\": [\n            \"comment\",\n            \"author_sylware\",\n            \"story_30357788\"\n        ],\n        \"highlightResult\": {\n            \"author\": {\n                \"value\": \"sylware\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"comment_text\": {\n                \"value\": \"The problem with javascript is not javascript, it is the system interface of the software where the javacript engine is: massive and beyond sanity heavy web renderers (blink|webkit/geeko) or very custom stuff like <em>node-js</em>.<p>I wonder if there is a &quot;standard&quot;, simple enough (reasonable implementation cost for very few devs) and stable in time way to call C functions of a shared library (aka &quot;libdl-ing&quot; from javascript), and use their memory objects and primitive types.\\nWe can even think of extensions for direct syscalls of various kernels.<p>How to make this &quot;generic&quot; enough? If I recall properly, python has &quot;ctype&quot;.\",\n                \"matchLevel\": \"full\",\n                \"fullyHighlighted\": false,\n                \"matchedWords\": [\n                    \"nodejs\"\n                ]\n            },\n            \"story_title\": {\n                \"value\": \"State of JavaScript 2021\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"story_url\": {\n                \"value\": \"https://2021.stateofjs.com/\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            }\n        }\n    },\n    {\n        \"objectID\": \"30361237\",\n        \"created_at\": \"2022-02-16T15:32:05.000Z\",\n        \"deleted_at\": null,\n        \"title\": null,\n        \"url\": null,\n        \"author\": \"synergy20\",\n        \"points\": null,\n        \"story_text\": null,\n        \"comment_text\": \"same here, backend fully golang, no nodejs|expressjs|whatever-js\",\n        \"num_comments\": null,\n        \"story_id\": 30357788,\n        \"story_title\": \"State of JavaScript 2021\",\n        \"story_url\": \"https://2021.stateofjs.com/\",\n        \"parent_id\": 30358369,\n        \"created_at_i\": 1645025525,\n        \"tags\": [\n            \"comment\",\n            \"author_synergy20\",\n            \"story_30357788\"\n        ],\n        \"highlightResult\": {\n            \"author\": {\n                \"value\": \"synergy20\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"comment_text\": {\n                \"value\": \"same here, backend fully golang, no <em>nodejs</em>|expressjs|whatever-js\",\n                \"matchLevel\": \"full\",\n                \"fullyHighlighted\": false,\n                \"matchedWords\": [\n                    \"nodejs\"\n                ]\n            },\n            \"story_title\": {\n                \"value\": \"State of JavaScript 2021\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"story_url\": {\n                \"value\": \"https://2021.stateofjs.com/\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            }\n        }\n    },\n    {\n        \"objectID\": \"30361950\",\n        \"created_at\": \"2022-02-16T16:20:41.000Z\",\n        \"deleted_at\": null,\n        \"title\": \"Node.js Trademarks Transferred to OpenJS Foundation – OpenJS Foundation\",\n        \"url\": \"https://openjsf.org/blog/2022/02/14/node-js-trademarks-transferred-to-openjs-foundation/\",\n        \"author\": \"jerrygoyal\",\n        \"points\": 1,\n        \"story_text\": null,\n        \"comment_text\": null,\n        \"num_comments\": 0,\n        \"story_id\": null,\n        \"story_title\": null,\n        \"story_url\": null,\n        \"parent_id\": null,\n        \"created_at_i\": 1645028441,\n        \"tags\": [\n            \"story\",\n            \"author_jerrygoyal\",\n            \"story_30361950\"\n        ],\n        \"highlightResult\": {\n            \"title\": {\n                \"value\": \"Node.js Trademarks Transferred to OpenJS Foundation – OpenJS Foundation\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"url\": {\n                \"value\": \"https://openjsf.org/blog/2022/02/14/<em>node-js</em>-trademarks-transferred-to-openjs-foundation/\",\n                \"matchLevel\": \"full\",\n                \"fullyHighlighted\": false,\n                \"matchedWords\": [\n                    \"nodejs\"\n                ]\n            },\n            \"author\": {\n                \"value\": \"jerrygoyal\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            }\n        }\n    },\n    {\n        \"objectID\": \"30363605\",\n        \"created_at\": \"2022-02-16T18:21:26.000Z\",\n        \"deleted_at\": null,\n        \"title\": null,\n        \"url\": null,\n        \"author\": \"jimmont\",\n        \"points\": null,\n        \"story_text\": null,\n        \"comment_text\": \"Deno missed the library list (it includes an extensive standard library) and I&#x27;m glad to see it in included in the runtimes and mention of new things. I just finished moving an app from Nodejs+npm to it and am finding work is quite a bit easier. Initially I&#x27;d thought it was completely missing.\",\n        \"num_comments\": null,\n        \"story_id\": 30357788,\n        \"story_title\": \"State of JavaScript 2021\",\n        \"story_url\": \"https://2021.stateofjs.com/\",\n        \"parent_id\": 30357788,\n        \"created_at_i\": 1645035686,\n        \"tags\": [\n            \"comment\",\n            \"author_jimmont\",\n            \"story_30357788\"\n        ],\n        \"highlightResult\": {\n            \"author\": {\n                \"value\": \"jimmont\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"comment_text\": {\n                \"value\": \"Deno missed the library list (it includes an extensive standard library) and I'm glad to see it in included in the runtimes and mention of new things. I just finished moving an app from <em>Nodejs</em>+npm to it and am finding work is quite a bit easier. Initially I'd thought it was completely missing.\",\n                \"matchLevel\": \"full\",\n                \"fullyHighlighted\": false,\n                \"matchedWords\": [\n                    \"nodejs\"\n                ]\n            },\n            \"story_title\": {\n                \"value\": \"State of JavaScript 2021\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"story_url\": {\n                \"value\": \"https://2021.stateofjs.com/\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            }\n        }\n    },\n    {\n        \"objectID\": \"30365059\",\n        \"created_at\": \"2022-02-16T20:11:05.000Z\",\n        \"deleted_at\": null,\n        \"title\": \"HTTPS Imports in Node.js\",\n        \"url\": \"https://github.com/nodejs/node/discussions/36430\",\n        \"author\": \"janczukt\",\n        \"points\": 1,\n        \"story_text\": null,\n        \"comment_text\": null,\n        \"num_comments\": 0,\n        \"story_id\": null,\n        \"story_title\": null,\n        \"story_url\": null,\n        \"parent_id\": null,\n        \"created_at_i\": 1645042265,\n        \"tags\": [\n            \"story\",\n            \"author_janczukt\",\n            \"story_30365059\"\n        ],\n        \"highlightResult\": {\n            \"title\": {\n                \"value\": \"HTTPS Imports in Node.js\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"url\": {\n                \"value\": \"https://github.com/<em>nodejs</em>/node/discussions/36430\",\n                \"matchLevel\": \"full\",\n                \"fullyHighlighted\": false,\n                \"matchedWords\": [\n                    \"nodejs\"\n                ]\n            },\n            \"author\": {\n                \"value\": \"janczukt\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            }\n        }\n    },\n    {\n        \"objectID\": \"30366526\",\n        \"created_at\": \"2022-02-16T22:14:12.000Z\",\n        \"deleted_at\": null,\n        \"title\": null,\n        \"url\": null,\n        \"author\": \"Shadonototra\",\n        \"points\": null,\n        \"story_text\": null,\n        \"comment_text\": \"for 120FPS (it is becoming the default noawadays), your frame budget is only 8ms<p>8 MILLISECONDS<p>your skill when you write sloppy REST API code in nodejs is not transferable here<p>you have to be creative while being able to write performance first code<p>you can&#x27;t pump more hardware to solve problems, if your customers have a shitty PC, your code has to run well on that shitty PC\",\n        \"num_comments\": null,\n        \"story_id\": 30362523,\n        \"story_title\": \"The harsh truth of video games programming\",\n        \"story_url\": \"https://new.pythonforengineers.com/blog/the-harsh-truth/\",\n        \"parent_id\": 30363810,\n        \"created_at_i\": 1645049652,\n        \"tags\": [\n            \"comment\",\n            \"author_Shadonototra\",\n            \"story_30362523\"\n        ],\n        \"highlightResult\": {\n            \"author\": {\n                \"value\": \"Shadonototra\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"comment_text\": {\n                \"value\": \"for 120FPS (it is becoming the default noawadays), your frame budget is only 8ms<p>8 MILLISECONDS<p>your skill when you write sloppy REST API code in <em>nodejs</em> is not transferable here<p>you have to be creative while being able to write performance first code<p>you can't pump more hardware to solve problems, if your customers have a shitty PC, your code has to run well on that shitty PC\",\n                \"matchLevel\": \"full\",\n                \"fullyHighlighted\": false,\n                \"matchedWords\": [\n                    \"nodejs\"\n                ]\n            },\n            \"story_title\": {\n                \"value\": \"The harsh truth of video games programming\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"story_url\": {\n                \"value\": \"https://new.pythonforengineers.com/blog/the-harsh-truth/\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            }\n        }\n    },\n    {\n        \"objectID\": \"30366586\",\n        \"created_at\": \"2022-02-16T22:19:25.000Z\",\n        \"deleted_at\": null,\n        \"title\": null,\n        \"url\": null,\n        \"author\": \"claytongulick\",\n        \"points\": null,\n        \"story_text\": null,\n        \"comment_text\": \"Well, I&#x27;m in exactly this situation right now.<p>The approach I&#x27;ve taken is to implement my own application gateway using node-http-proxy.<p>I use npm workspaces to share common functionality between all the node parts of the application, including the api gateway &#x2F; reverse proxy.<p>I configure the other services to trust a HTTP header that&#x27;s injected in the api gateway (and explicitly deleted from incoming requests) that includes details about the user. For example, Apache Superset (and several other services) support the REMOTE_USER header.<p>Honestly, doing this in a high-level language like NodeJS with node-http-proxy is even simpler to do and easier to read &#x2F; audit than what I&#x27;ve seen in Rego, plus I get to use all the common utilities for dynamic service access, database access, etc...<p>This borders on a &quot;NIH&quot; thing, but I think if you saw the actual implementation, it&#x27;s even less complex than what I&#x27;m seeing from these examples. It took me a couple hours to throw together, it&#x27;s easy to extend, and supports a multitude of authentication scenarios, including shared-session (which would be tough with Rego).\",\n        \"num_comments\": null,\n        \"story_id\": 30361262,\n        \"story_title\": \"Aserto: Developer API for permissions and RBAC\",\n        \"story_url\": \"https://www.aserto.com/blog/aserto-the-developer-api-for-permissions-and-rbac-is-open-to-all\",\n        \"parent_id\": 30363967,\n        \"created_at_i\": 1645049965,\n        \"tags\": [\n            \"comment\",\n            \"author_claytongulick\",\n            \"story_30361262\"\n        ],\n        \"highlightResult\": {\n            \"author\": {\n                \"value\": \"claytongulick\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"comment_text\": {\n                \"value\": \"Well, I'm in exactly this situation right now.<p>The approach I've taken is to implement my own application gateway using node-http-proxy.<p>I use npm workspaces to share common functionality between all the node parts of the application, including the api gateway / reverse proxy.<p>I configure the other services to trust a HTTP header that's injected in the api gateway (and explicitly deleted from incoming requests) that includes details about the user. For example, Apache Superset (and several other services) support the REMOTE_USER header.<p>Honestly, doing this in a high-level language like <em>NodeJS</em> with node-http-proxy is even simpler to do and easier to read / audit than what I've seen in Rego, plus I get to use all the common utilities for dynamic service access, database access, etc...<p>This borders on a &quot;NIH&quot; thing, but I think if you saw the actual implementation, it's even less complex than what I'm seeing from these examples. It took me a couple hours to throw together, it's easy to extend, and supports a multitude of authentication scenarios, including shared-session (which would be tough with Rego).\",\n                \"matchLevel\": \"full\",\n                \"fullyHighlighted\": false,\n                \"matchedWords\": [\n                    \"nodejs\"\n                ]\n            },\n            \"story_title\": {\n                \"value\": \"Aserto: Developer API for permissions and RBAC\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"story_url\": {\n                \"value\": \"https://www.aserto.com/blog/aserto-the-developer-api-for-permissions-and-rbac-is-open-to-all\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            }\n        }\n    },\n    {\n        \"objectID\": \"30370702\",\n        \"created_at\": \"2022-02-17T08:17:49.000Z\",\n        \"deleted_at\": null,\n        \"title\": null,\n        \"url\": null,\n        \"author\": \"Normal_gaussian\",\n        \"points\": null,\n        \"story_text\": null,\n        \"comment_text\": \"And if you&#x27;re using nodejs woth source maps, but still getting horrid stacks: &quot;--enable-source-maps&quot;<p>&gt; NODE_OPTIONS=&quot;$NODE_OPTIONS --enable-source-maps&quot;\",\n        \"num_comments\": null,\n        \"story_id\": 30361850,\n        \"story_title\": \"Passwordle\",\n        \"story_url\": \"https://rsk0315.github.io/playground/passwordle.html\",\n        \"parent_id\": 30365817,\n        \"created_at_i\": 1645085869,\n        \"tags\": [\n            \"comment\",\n            \"author_Normal_gaussian\",\n            \"story_30361850\"\n        ],\n        \"highlightResult\": {\n            \"author\": {\n                \"value\": \"Normal_gaussian\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"comment_text\": {\n                \"value\": \"And if you're using <em>nodejs</em> woth source maps, but still getting horrid stacks: &quot;--enable-source-maps&quot;<p>&gt; NODE_OPTIONS=&quot;$NODE_OPTIONS --enable-source-maps&quot;\",\n                \"matchLevel\": \"full\",\n                \"fullyHighlighted\": false,\n                \"matchedWords\": [\n                    \"nodejs\"\n                ]\n            },\n            \"story_title\": {\n                \"value\": \"Passwordle\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"story_url\": {\n                \"value\": \"https://rsk0315.github.io/playground/passwordle.html\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            }\n        }\n    },\n    {\n        \"objectID\": \"30371610\",\n        \"created_at\": \"2022-02-17T10:33:11.000Z\",\n        \"deleted_at\": null,\n        \"title\": null,\n        \"url\": null,\n        \"author\": \"austincheney\",\n        \"points\": null,\n        \"story_text\": null,\n        \"comment_text\": \"1. Dedicated curation. Part of what makes the NodeJS project so successful is the formal curation applied to its documentation.<p>2. Writing takes practice. Ignoring this due to any bias is a case for institutionalizing ignorance. At my current employer I see much better writing coming out of India from non-native speakers&#x2F;writers.\",\n        \"num_comments\": null,\n        \"story_id\": 30361655,\n        \"story_title\": \"My favorite things about working at companies with a culture of writing\",\n        \"story_url\": \"https://founder-fodder.ghost.io/writing-cultures-win/\",\n        \"parent_id\": 30361768,\n        \"created_at_i\": 1645093991,\n        \"tags\": [\n            \"comment\",\n            \"author_austincheney\",\n            \"story_30361655\"\n        ],\n        \"highlightResult\": {\n            \"author\": {\n                \"value\": \"austincheney\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"comment_text\": {\n                \"value\": \"1. Dedicated curation. Part of what makes the <em>NodeJS</em> project so successful is the formal curation applied to its documentation.<p>2. Writing takes practice. Ignoring this due to any bias is a case for institutionalizing ignorance. At my current employer I see much better writing coming out of India from non-native speakers/writers.\",\n                \"matchLevel\": \"full\",\n                \"fullyHighlighted\": false,\n                \"matchedWords\": [\n                    \"nodejs\"\n                ]\n            },\n            \"story_title\": {\n                \"value\": \"My favorite things about working at companies with a culture of writing\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"story_url\": {\n                \"value\": \"https://founder-fodder.ghost.io/writing-cultures-win/\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            }\n        }\n    },\n    {\n        \"objectID\": \"30373662\",\n        \"created_at\": \"2022-02-17T14:54:23.000Z\",\n        \"deleted_at\": null,\n        \"title\": null,\n        \"url\": null,\n        \"author\": \"smoyer\",\n        \"points\": null,\n        \"story_text\": null,\n        \"comment_text\": \"This probably falls under the category of &quot;common knowledge&quot; but:<p>1) Install a NodeJS version manager such as nvm.<p>2) The NodeJS ecosystem is a polluter that would qualify as and EPA super-fund site.  Don&#x27;t install anything using your OS package manager but rather install the tools you need for QA and build as project development dependencies.\",\n        \"num_comments\": null,\n        \"story_id\": 30373458,\n        \"story_title\": \"A Twisted Maze of Dependencies\",\n        \"story_url\": \"https://rachelbythebay.com/w/2022/02/16/deps/\",\n        \"parent_id\": 30373458,\n        \"created_at_i\": 1645109663,\n        \"tags\": [\n            \"comment\",\n            \"author_smoyer\",\n            \"story_30373458\"\n        ],\n        \"highlightResult\": {\n            \"author\": {\n                \"value\": \"smoyer\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"comment_text\": {\n                \"value\": \"This probably falls under the category of &quot;common knowledge&quot; but:<p>1) Install a <em>NodeJS</em> version manager such as nvm.<p>2) The <em>NodeJS</em> ecosystem is a polluter that would qualify as and EPA super-fund site.  Don't install anything using your OS package manager but rather install the tools you need for QA and build as project development dependencies.\",\n                \"matchLevel\": \"full\",\n                \"fullyHighlighted\": false,\n                \"matchedWords\": [\n                    \"nodejs\"\n                ]\n            },\n            \"story_title\": {\n                \"value\": \"A Twisted Maze of Dependencies\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"story_url\": {\n                \"value\": \"https://rachelbythebay.com/w/2022/02/16/deps/\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            }\n        }\n    },\n    {\n        \"objectID\": \"30377453\",\n        \"created_at\": \"2022-02-17T19:26:19.000Z\",\n        \"deleted_at\": null,\n        \"title\": null,\n        \"url\": null,\n        \"author\": \"cercatrova\",\n        \"points\": null,\n        \"story_text\": null,\n        \"comment_text\": \"Have you seen this list of companies that hire without whiteboard&#x2F;coding interviews? You might also want to refresh your skillset into something like React and NodeJS which has a lot of jobs these days. After having done so, it is relatively easy to get jobs making into the six figures. Hope this helps.<p><a href=\\\"https:&#x2F;&#x2F;github.com&#x2F;poteto&#x2F;hiring-without-whiteboards\\\" rel=\\\"nofollow\\\">https:&#x2F;&#x2F;github.com&#x2F;poteto&#x2F;hiring-without-whiteboards</a>\",\n        \"num_comments\": null,\n        \"story_id\": 30376904,\n        \"story_title\": \"Despite rising wages, 61% of Americans are still living paycheck to paycheck\",\n        \"story_url\": \"https://www.cnbc.com/2022/02/17/wages-are-rising-but-many-americans-still-live-paycheck-to-paycheck.html\",\n        \"parent_id\": 30377299,\n        \"created_at_i\": 1645125979,\n        \"tags\": [\n            \"comment\",\n            \"author_cercatrova\",\n            \"story_30376904\"\n        ],\n        \"highlightResult\": {\n            \"author\": {\n                \"value\": \"cercatrova\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"comment_text\": {\n                \"value\": \"Have you seen this list of companies that hire without whiteboard/coding interviews? You might also want to refresh your skillset into something like React and <em>NodeJS</em> which has a lot of jobs these days. After having done so, it is relatively easy to get jobs making into the six figures. Hope this helps.<p><a href=\\\"https://github.com/poteto/hiring-without-whiteboards\\\" rel=\\\"nofollow\\\">https://github.com/poteto/hiring-without-whiteboards</a>\",\n                \"matchLevel\": \"full\",\n                \"fullyHighlighted\": false,\n                \"matchedWords\": [\n                    \"nodejs\"\n                ]\n            },\n            \"story_title\": {\n                \"value\": \"Despite rising wages, 61% of Americans are still living paycheck to paycheck\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"story_url\": {\n                \"value\": \"https://www.cnbc.com/2022/02/17/wages-are-rising-but-many-americans-still-live-paycheck-to-paycheck.html\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            }\n        }\n    },\n    {\n        \"objectID\": \"30380802\",\n        \"created_at\": \"2022-02-18T00:33:36.000Z\",\n        \"deleted_at\": null,\n        \"title\": null,\n        \"url\": null,\n        \"author\": \"capableweb\",\n        \"points\": null,\n        \"story_text\": null,\n        \"comment_text\": \"For me (on AMD Ryzen 9 5950X, Arch Linux, Clojure 1.10.3 [OpenJDK 17.0.1] and NodeJS 17.4.0), circle.js takes ~0.15 seconds and the circle.clj takes ~0.19 seconds. After running circle.clj 100 times in a running JVM though, it takes the time down to ~0.092 seconds for each run.\",\n        \"num_comments\": null,\n        \"story_id\": 30378900,\n        \"story_title\": \"How much boilerplate code you need to write a ray-tracer?\",\n        \"story_url\": \"https://sergeyreznik.github.io/rtcode/index.html\",\n        \"parent_id\": 30379540,\n        \"created_at_i\": 1645144416,\n        \"tags\": [\n            \"comment\",\n            \"author_capableweb\",\n            \"story_30378900\"\n        ],\n        \"highlightResult\": {\n            \"author\": {\n                \"value\": \"capableweb\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"comment_text\": {\n                \"value\": \"For me (on AMD Ryzen 9 5950X, Arch Linux, Clojure 1.10.3 [OpenJDK 17.0.1] and <em>NodeJS</em> 17.4.0), circle.js takes ~0.15 seconds and the circle.clj takes ~0.19 seconds. After running circle.clj 100 times in a running JVM though, it takes the time down to ~0.092 seconds for each run.\",\n                \"matchLevel\": \"full\",\n                \"fullyHighlighted\": false,\n                \"matchedWords\": [\n                    \"nodejs\"\n                ]\n            },\n            \"story_title\": {\n                \"value\": \"How much boilerplate code you need to write a ray-tracer?\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"story_url\": {\n                \"value\": \"https://sergeyreznik.github.io/rtcode/index.html\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            }\n        }\n    },\n    {\n        \"objectID\": \"30381624\",\n        \"created_at\": \"2022-02-18T02:54:54.000Z\",\n        \"deleted_at\": null,\n        \"title\": null,\n        \"url\": null,\n        \"author\": \"ClumsyPilot\",\n        \"points\": null,\n        \"story_text\": null,\n        \"comment_text\": \"&quot;undoubtably there is some things that slipped through the cracks and were never written down.&quot;<p>I dont think they slip through the cracks as much as people today have different skils. It&#x27;s like trying to get. Bunch of Node-JS developers to get a mainframe-based system from the 80s working.\",\n        \"num_comments\": null,\n        \"story_id\": 30379271,\n        \"story_title\": \"SpaceX’s monstrous, dirt-cheap Starship may transform space travel\",\n        \"story_url\": \"https://www.economist.com/science-and-technology/2022/02/19/spacexs-monstrous-dirt-cheap-starship-may-transform-space-travel\",\n        \"parent_id\": 30379986,\n        \"created_at_i\": 1645152894,\n        \"tags\": [\n            \"comment\",\n            \"author_ClumsyPilot\",\n            \"story_30379271\"\n        ],\n        \"highlightResult\": {\n            \"author\": {\n                \"value\": \"ClumsyPilot\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"comment_text\": {\n                \"value\": \"&quot;undoubtably there is some things that slipped through the cracks and were never written down.&quot;<p>I dont think they slip through the cracks as much as people today have different skils. It's like trying to get. Bunch of <em>Node-JS</em> developers to get a mainframe-based system from the 80s working.\",\n                \"matchLevel\": \"full\",\n                \"fullyHighlighted\": false,\n                \"matchedWords\": [\n                    \"nodejs\"\n                ]\n            },\n            \"story_title\": {\n                \"value\": \"SpaceX’s monstrous, dirt-cheap Starship may transform space travel\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"story_url\": {\n                \"value\": \"https://www.economist.com/science-and-technology/2022/02/19/spacexs-monstrous-dirt-cheap-starship-may-transform-space-travel\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            }\n        }\n    },\n    {\n        \"objectID\": \"30382540\",\n        \"created_at\": \"2022-02-18T05:52:46.000Z\",\n        \"deleted_at\": null,\n        \"title\": null,\n        \"url\": null,\n        \"author\": \"meetups323\",\n        \"points\": null,\n        \"story_text\": null,\n        \"comment_text\": \"nodejs outshadows all of these[1] (though rust is closer than I expected), yet is not included. I wonder why... it seems like the fact that JS is wildly popular is some sort of dirty secret in the industry.<p>[1]: <a href=\\\"https:&#x2F;&#x2F;pkgstats.archlinux.de&#x2F;compare&#x2F;packages#packages=dmd,dotnet,go,julia,nim,nodejs,rust,rustup,zig\\\" rel=\\\"nofollow\\\">https:&#x2F;&#x2F;pkgstats.archlinux.de&#x2F;compare&#x2F;packages#packages=dmd,...</a>\",\n        \"num_comments\": null,\n        \"story_id\": 30382059,\n        \"story_title\": \"Popularity of Programming Languages on Arch Linux\",\n        \"story_url\": \"https://pkgstats.archlinux.de/compare/packages#packages=dmd,dotnet,go,julia,nim,rust,zig\",\n        \"parent_id\": 30382059,\n        \"created_at_i\": 1645163566,\n        \"tags\": [\n            \"comment\",\n            \"author_meetups323\",\n            \"story_30382059\"\n        ],\n        \"highlightResult\": {\n            \"author\": {\n                \"value\": \"meetups323\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"comment_text\": {\n                \"value\": \"<em>nodejs</em> outshadows all of these[1] (though rust is closer than I expected), yet is not included. I wonder why... it seems like the fact that JS is wildly popular is some sort of dirty secret in the industry.<p>[1]: <a href=\\\"https://pkgstats.archlinux.de/compare/packages#packages=dmd,dotnet,go,julia,nim,nodejs,rust,rustup,zig\\\" rel=\\\"nofollow\\\">https://pkgstats.archlinux.de/compare/packages#packages=dmd,...</a>\",\n                \"matchLevel\": \"full\",\n                \"fullyHighlighted\": false,\n                \"matchedWords\": [\n                    \"nodejs\"\n                ]\n            },\n            \"story_title\": {\n                \"value\": \"Popularity of Programming Languages on Arch Linux\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"story_url\": {\n                \"value\": \"https://pkgstats.archlinux.de/compare/packages#packages=dmd,dotnet,go,julia,nim,rust,zig\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            }\n        }\n    },\n    {\n        \"objectID\": \"30383689\",\n        \"created_at\": \"2022-02-18T09:17:42.000Z\",\n        \"deleted_at\": null,\n        \"title\": null,\n        \"url\": null,\n        \"author\": \"capableweb\",\n        \"points\": null,\n        \"story_text\": null,\n        \"comment_text\": \"Does NodeJS do any on-the-fly optimization like the JVM does?\",\n        \"num_comments\": null,\n        \"story_id\": 30378900,\n        \"story_title\": \"How much boilerplate code you need to write a ray-tracer?\",\n        \"story_url\": \"https://sergeyreznik.github.io/rtcode/index.html\",\n        \"parent_id\": 30381541,\n        \"created_at_i\": 1645175862,\n        \"tags\": [\n            \"comment\",\n            \"author_capableweb\",\n            \"story_30378900\"\n        ],\n        \"highlightResult\": {\n            \"author\": {\n                \"value\": \"capableweb\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"comment_text\": {\n                \"value\": \"Does <em>NodeJS</em> do any on-the-fly optimization like the JVM does?\",\n                \"matchLevel\": \"full\",\n                \"fullyHighlighted\": false,\n                \"matchedWords\": [\n                    \"nodejs\"\n                ]\n            },\n            \"story_title\": {\n                \"value\": \"How much boilerplate code you need to write a ray-tracer?\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"story_url\": {\n                \"value\": \"https://sergeyreznik.github.io/rtcode/index.html\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            }\n        }\n    },\n    {\n        \"objectID\": \"30383896\",\n        \"created_at\": \"2022-02-18T09:53:21.000Z\",\n        \"deleted_at\": null,\n        \"title\": null,\n        \"url\": null,\n        \"author\": \"valand\",\n        \"points\": null,\n        \"story_text\": null,\n        \"comment_text\": \"I get the sentiment. Consistent means differently for different person.<p>As a non power user Windows is consistent enough.<p>Obviously not for power user who often stray from the green usage path of Windows.<p>Sort of like comparing working on a nodejs http server project on Windows vs working on a project that extensively uses winapi.\",\n        \"num_comments\": null,\n        \"story_id\": 30367781,\n        \"story_title\": \"Building for the 99% Developers\",\n        \"story_url\": \"https://future.a16z.com/software-development-building-for-99-developers/\",\n        \"parent_id\": 30378532,\n        \"created_at_i\": 1645178001,\n        \"tags\": [\n            \"comment\",\n            \"author_valand\",\n            \"story_30367781\"\n        ],\n        \"highlightResult\": {\n            \"author\": {\n                \"value\": \"valand\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"comment_text\": {\n                \"value\": \"I get the sentiment. Consistent means differently for different person.<p>As a non power user Windows is consistent enough.<p>Obviously not for power user who often stray from the green usage path of Windows.<p>Sort of like comparing working on a <em>nodejs</em> http server project on Windows vs working on a project that extensively uses winapi.\",\n                \"matchLevel\": \"full\",\n                \"fullyHighlighted\": false,\n                \"matchedWords\": [\n                    \"nodejs\"\n                ]\n            },\n            \"story_title\": {\n                \"value\": \"Building for the 99% Developers\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            },\n            \"story_url\": {\n                \"value\": \"https://future.a16z.com/software-development-building-for-99-developers/\",\n                \"matchLevel\": \"none\",\n                \"matchedWords\": []\n            }\n        }\n    }\n]"
+				}
+			]
+		}
+	]
+}

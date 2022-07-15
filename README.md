@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.reign.cl/es/">
-    <img src="https://d33wubrfki0l68.cloudfront.net/cc301e98a199a8b59325d28a96b7d61643efe70f/04637/static/8cec8c20524baf887c3866345b536aa7/logo-reign-full.svg" alt="Logo" width=480 height=auto>
+    <img src="https://svgsilh.com/svg/39762.svg" alt="Logo" width=480 height=auto>
   </a>
 </p>
 
